@@ -1,9 +1,33 @@
-h1 {
-    color: #960c0c;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-p {
-    background-color: #000000;
-    color: #ffffff;
+#construction{
+    display: flex;
+    padding: 10px;
+    width: 60%;
+    border: 10px dashed #000;
+    box-shadow: 0 0 0 10px #FF9A00;
+    background-color: #FF9A00;
+    border-radius: 10px;
+}
+
+.centered {
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 225px;
+  }
+
+#under-construction-h1 {
+    text-align: center;
+    font-size: 55px;
     font-weight: bold;
+    flex:3;
+    padding-top: 10px;
+}
+
+#tools-img {
+    flex:1;
+    padding: 25px;
+    width: auto;
 }
