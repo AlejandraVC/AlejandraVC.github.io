@@ -14,7 +14,7 @@ body {
     box-shadow: 0 0 0 10px #FF9A00;
     background-color: #FF9A00;
     border-radius: 10px;
-    max-height: 18em;
+    height: 30%;
 
     position: absolute;
     top:0;
