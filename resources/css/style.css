@@ -64,7 +64,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 460px) {
     #construction-container {   
       flex-direction: column;
     }
