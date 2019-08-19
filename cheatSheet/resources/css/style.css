@@ -15,11 +15,38 @@ body{
 ul{
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 ol{
     margin: 0;
-    /* padding: 0; */
+}
+
+.subsection-title {
+    text-align: center;
+    color: #087E8B;
+    font-size: 28px;
+}
+
+.sub-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footnote {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.code {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
 
 /* Header */
@@ -110,6 +137,156 @@ h2 {
 .index a:hover{
     color: #e8491d;
     font-weight: bold;
+}
+
+/* ------ IMAGES ------ */
+
+.hedgehog img{
+    width: 100%;
+    border: #35424a 2px solid;
+    border-radius: 10px;
+}
+
+.polaroid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+/* Hover Overlay */
+.image-hover-overlay-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box {
+    width: 30%;
+}
+
+.text-fade-container{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #35424a;
+}
+  
+.text-fade-container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Fade in Box - Hover Overlay */
+.box-fade-container{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-text {
+    background-color: #35424a;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.fade-avatar {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.box-fade-container:hover .fade-avatar {
+    opacity: 0.3;
+}
+
+.box-fade-container:hover .box-overlay {
+    opacity: 1;
+}
+
+.box-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+/* Slide in - Hover Overlay */
+.slide-in-container {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.slide-overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #35424a;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+  
+.slide-in-container:hover .slide-overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+.slide-text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* Footer */
