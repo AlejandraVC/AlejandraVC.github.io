@@ -49,6 +49,27 @@ ol{
     margin-bottom: 25px;
 }
 
+/* Go to Top - Button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: #35424a 1px solid; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #35424a; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #e8491d; /* Add a dark-grey background on hover */
+  }
+
 /* Header */
 header{
     background: #35424a;
@@ -309,5 +330,13 @@ footer{
 
     header {
         padding-bottom: 20px;  
+    }
+
+    .image-hover-overlay-container{
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
     }
 }
