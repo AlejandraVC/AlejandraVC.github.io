@@ -20,11 +20,10 @@
       </div>
       <nav>
         <ul>
-          <li class="current"><a href="index.html">Index</a></li>
-          <!-- <li><a href="0.html">0</a></li> -->
+          <!-- <li class="current"><a href="index.html">Index</a></li> -->
           <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="SEARCH" name="search">
+              <input type="text" id="myInput" onkeyup="search()" placeholder="Search.." title="Type in a name" name="search">
               <button class="button-search" type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
@@ -33,13 +32,14 @@
       </div>
     </div>
   </header>
-  
+
+
   <div class="container index">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-sort-up"></i></button>
     <h2>INDEX</h2>
-    <ol>
+    <ol id="myOL">
       <li><a href="images.html">Images</a></li>
-      <li><a href="0.html">text</a></li>
+      <li><a href="visualDesign.html">Visual Design</a></li>
       <li><a href="0.html">text</a></li>
       <li><a href="0.html">text</a></li>
       <li><a href="0.html">text</a></li>

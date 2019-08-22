@@ -1,22 +1,16 @@
-function search() {
- 
-    var name = document.getElementById("searchForm").elements["searchItem"].value;
-    var pattern = name.toLowerCase();
-    var targetId = "";
-  
-    var divs = document.getElementsByClassName("col-md-2");
-    for (var i = 0; i < divs.length; i++) {
-       var para = divs[i].getElementsByTagName("p");
-       var index = para[0].innerText.toLowerCase().indexOf(pattern);
-       if (index != -1) {
-          targetId = divs[i].parentNode.id;
-          document.getElementById(targetId).scrollIntoView();
-          break;
-       }
-    }  
- }
+// SIDEBAR
+// Set the width of the side navigation to 250px
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
- // When the user scrolls down 20px from the top of the document, show the button
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+// GO TO TOP
+ // When the user scrolls down 100px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

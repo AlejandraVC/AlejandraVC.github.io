@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cheatSheet | Images </title>
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css" >
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" href="resources/raccoon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="hightlight">Web Design</span> - CheatSheet</h1>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-sort-up"></i></button>
+  <h2>Visual Design</h2>
+  
+  <div class="container">
+    <h3 class="subsection-title">Linear Gradient to Create a Striped Element</h3>
+    <div class="sub-container">
+      <div class="demo-area"></div>   
+      <div class="code">
+        <p>.demo-area{<br>
+          width: 100%;<br>
+          border: #35424a 2px solid;<br>
+          border-radius: 20px;<br>
+          height: 300px;<br>
+          margin:  50 auto;<br>
+          background: repeating-linear-gradient(<br>
+          90deg,<br>
+          #4b397e 0px,<br>
+          #67eeff 40px,<br>
+          #545454 40px,<br>
+          #c435b5 80px);<br>
+          }</p>
+      </div>
+    </div>
+    <hr/>
+
+    <h3 class="subsection-title">@keyframes and animation Properties Work</h3>
+    <div class="sub-container">
+      <div class="rainbow" id="rect"></div>   
+      <div class="code">
+        <p>#rect { <br>
+          animation-name: rainbow;<br>
+          animation-duration: 4s;<br>
+          animation-iteration-count:infinite;<br>
+        }<br>
+        <br>
+        @keyframes rainbow {<br>
+          0% {<br>
+            background-color: #FF0000;<br>
+          }<br>
+          20% {<br>
+            background-color: #ffa500;<br>
+          }<br>
+          40% {<br>
+            background-color: #ffff00;<br>
+          }<br>
+          60% {<br>
+            background-color: #008000;<br>
+          }<br>
+          80% {<br>
+            background-color: #0000ff;<br>
+          }<br>
+          100% {<br>
+            background-color: #800080;<br>
+          }<br>
+        }
+        </p>
+      </div>
+    </div>
+    <hr/>
+
+    <h3 class="subsection-title">Heartbeat using an Infinite Animation Count</h3>
+    <div class="sub-container">
+      <div class="heart-area">
+        <div class="heart"></div>   
+      </div>
+      <div class="code">
+        <p>@keyframes heart-areadiv {<br>
+          50% {<br>
+            background: #ffe6f2;<br>
+          }<br>
+        }<br>
+          <br>
+          @keyframes beat {<br>
+          0% {<br>
+            transform: scale(1) rotate(-45deg);<br>
+          }<br>
+          50% {<br>
+            transform: scale(0.6) rotate(-45deg);<br>
+          }<br>
+      }</p>
+      </div>
+    </div>
+    <hr/>
+
+  </div>
+
+  <footer>
+      <p>Alejandra.V - Web Design, Copyright &copy; 2019</p>
+  </footer>
+</body>
+</html>

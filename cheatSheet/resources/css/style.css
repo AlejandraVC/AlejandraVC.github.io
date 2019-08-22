@@ -58,11 +58,12 @@ ol{
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 25px; /* Increase font size */
-  }
+    opacity: .75;
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #e8491d; /* Add a dark-grey background on hover */
-  }
+}
 
 /* Header */
 header{
@@ -98,7 +99,7 @@ header nav{
     margin-top: 10px
 }
 
-header .hightlight, header .current a{
+header .hightlight, header .current a, .sidenav .current a{
     color: #e8491d;
     font-weight: bold;
 }
@@ -133,6 +134,64 @@ nav input[type=text] {
     background: #ccc;
     cursor: pointer;
 }
+
+/* Sidebar */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #e8491d; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.fa-bars {
+    background: #35424a;
+    color: #fff;
+    font-size: 25px;
+    margin: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    background: #e8491d;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #35424a;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
 /* Index */
 h2 {
@@ -302,6 +361,125 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+/* VISUAL DESIGN */
+
+/* Linear Gradient to Create a Striped Element */
+.demo-area {
+    width: 100%;
+    border: #35424a 2px solid;
+    border-radius: 20px;
+    height: 300px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      90deg,
+      #35424a 0px,
+      #e8491d 40px,
+      #35424a 40px,
+      #087E8B 80px
+    );
+}
+
+/* Rainbow */
+.rainbow {
+    width: 100%;
+    border: #35424a 2px solid;
+    border-radius: 20px;
+    height: 300px;
+    background: #FF0000;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes rainbow {
+  0% {
+    background-color: #FF0000;
+  }
+  20% {
+    background-color: #ffa500;
+  }
+  40% {
+    background-color: #ffff00;
+  }
+  60% {
+    background-color: #008000;
+  }
+  80% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #800080;
+  }
+}
+
+/* Heart design */
+.heart-area {
+    width: 100%;
+    border: #35424a 2px solid;
+    border-radius: 20px;
+    height: 300px;
+    padding: 0;
+    background: white;
+    animation-name: heart-areadiv;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+}
+
+.heart {
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    margin-top:-25px;
+    margin-left:-25px;
+
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.heart:after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+.heart:before {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+
+@keyframes heart-areadiv {
+    50% {
+      background: #ffe6f2;
+    }
+}
+
+@keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
 }
 
 /* Footer */
