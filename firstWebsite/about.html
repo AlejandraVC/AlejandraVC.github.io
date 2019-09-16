@@ -4,11 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>myFirstWebsite | About</title>
-  <link rel="stylesheet" href="resources/css/style.css">
+  <meta name="description" content="My first website">
+  <meta name="keywords" content="begginer, web design. HTML5, CSS3">
+  <meta name="author" content="Alejandra Vargas">
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="icon" href="resources/coding.ico" type="image/x-icon">
+  <title>myFirstWebsite | About</title>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Alejandra.V</span> - Web Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe to my Newsletter</h1>
+      <form>
+        <input type="email" placeholder="Enter email..">
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">About Us</h1>
+        <p>Aliquam nec risus sit amet ipsum convallis rutrum. Nullam auctor nibh et ultricies ullamcorper. Mauris egestas, arcu vitae blandit cursus, risus magna varius augue, at dictum urna libero nec urna.</p>
+        <p>Nam sagittis ante arcu, ac lacinia massa aliquet in. Curabitur consequat lacus aliquam, imperdiet quam eu, facilisis eros.</p>
+      </article>
+
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>What We Do</h3>
+          <p>Aenean non diam pretium, hendrerit nibh non, pellentesque elit. In luctus eget purus in tincidunt.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer id="footer">
+      <p>Alejandra.V - Web Design, Copyright &copy; 2019</p>
+  </footer>
 </body>
 </html>
