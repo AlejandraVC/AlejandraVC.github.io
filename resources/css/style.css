@@ -49,17 +49,23 @@ header a{
     font-size: 16px;
 }
 
-header li{
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
 header #branding{
     float: left;
 }
 
 header #branding h1{
     margin: 0;
+}
+
+#logo {
+    width: 90px;
+    float: left;
+    padding: 10px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
 }
 
 header nav{
