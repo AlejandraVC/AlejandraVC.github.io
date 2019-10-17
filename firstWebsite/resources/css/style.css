@@ -1,9 +1,16 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f4f4f4;
+    --main-blue: #009FFD;
+    --main-gray: #35424a;
+  }
+
 body{
     font: 15px/1.5 'Dosis', sans-serif;
     /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: var(--main-white);
 }
 
 /* Global */
@@ -20,7 +27,7 @@ ul{
 
 .button_1{
     height: 38px;
-    background: #e8491d;
+    background: var(--main-blue);
     border: none;
     padding: 0 20px;
     color: #fff;
@@ -29,18 +36,18 @@ ul{
 
 .dark{
     padding: 15px;
-    background: #35424a;
+    background: var(--main-gray);
     color: #fff;
     margin: 10px 0;
 }
 
 /* Header */
 header{
-    background: #35424a;
+    background: var(--main-gray);
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: var(--main-blue) 3px solid;
 }
 
 header a{
@@ -70,7 +77,7 @@ header nav{
 }
 
 header .hightlight, header .current a{
-    color: #e8491d;
+    color: var(--main-blue);
     font-weight: bold;
 }
 
@@ -82,7 +89,7 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;
-    background: url('/Users/AlejandraV/Dropbox/Alejandra.V/Documents/Engineering/Web Development/TraversyMedia/Projects/firstWebsite/resources/img/showcase.jpeg') no-repeat center center;
+    background: url('resources/img/showcase.jpeg') no-repeat center center;
     background-size:100% auto;
     text-align: center;
     color: #fff;
@@ -102,7 +109,7 @@ header a:hover{
 #newsletter{
     padding: 15px;
     color: #fff;
-    background: #35424a;
+    background: var(--main-gray);
 }
 
 #newsletter h1{
@@ -172,7 +179,7 @@ footer{
     margin-top: 20px;
     text-align: center;
     color: #fff;
-    background-color: #e8491d;
+    background-color: var(--main-blue);
 }
 
 /* Media Queries */
