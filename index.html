@@ -4,75 +4,213 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="My first website">
-  <meta name="keywords" content="begginer, web design. HTML5, CSS3">
-  <meta name="author" content="Alejandra Vargas">
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="resources/css/style.css">
-  <link rel="icon" href="resources/av_logo.ico" type="image/x-icon">
-  <title>Alejandra.V | Welcome</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="icon" href="resources/xxxxx.ico" type="image/x-icon">
+  <title>Personal Portfolio Webpage</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <img id="logo" src="resources/img/av_logo.png">
-        <h1><span class="highlight">Alejandra.V</span> - Web Design</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+<!-- START NAV -->
 
-  <section id="showcase">
-    <div class="container">
-      <h1>This is my first Website</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi sem, porttitor feugiat euismod et, condimentum eget risus. Fusce eget ante luctus, mattis elit sed, molestie odio. Fusce eleifend vestibulum varius.</p>
-    </div>
-  </section>
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
 
-  <section id="newsletter">
-    <div class="container">
-      <h1>Subscribe to my Newsletter</h1>
-      <form>
-        <input type="email" placeholder="Enter email..">
-        <button type="submit" class="button_1">Subscribe</button>
-      </form>
-    </div>
-  </section>
+<!-- END NAV -->
 
-  <section id="boxes">
-    
-    <div class="container">
-      <div class="box">
-        <img src="resources/img/html5_logo.png">
-        <h3>HTML5 Markup</h3>
-        <p>Nullam ut magna quis lorem blandit condimentum. Nullam facilisis molestie sem sit amet maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="box">
-        <img src="resources/img/css3_logo.png">
-        <h3>CSS3 Styling</h3>
-        <p>Nullam ut magna quis lorem blandit condimentum. Nullam facilisis molestie sem sit amet maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="box">
-        <img src="resources/img/javascript_logo.png">
-        <h3>JavaScript Dynamic Content</h3>
-        <!-- <img src="resources/img/webdesign_logo.svg"> -->
-        <!-- <h3>Graphic Design</h3> -->
-        <p>Nullam ut magna quis lorem blandit condimentum. Nullam facilisis molestie sem sit amet maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+<!-- START WELCOME SECTION -->
 
-    </div>
-  </section>
+<section id="welcome-section" class="welcome-section">
+  <h1>Alejandra.V</h1>
+  <p>web development</p>
+</section>
 
-  <footer id="footer">
-      <p>Alejandra.V - Web Design, Copyright &copy; 2019</p>
-  </footer>
+<!-- END WELCOME SECTION -->
+
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">These are some of my projects</h2>
+
+  <div class="projects-grid">
+    <a
+      href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Random Quote Machine
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        JavaScript Calculator
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/mVEJag"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Map Data Across the Globe
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/wGqEga"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Wikipedia Viewer
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tic Tac Toe Game
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+
+  <a
+    href="https://codepen.io/FreeCodeCamp/"
+    class="btn btn-show-all"
+    target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
+
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+    <p>How do you take your coffee?</p>
+  </div>
+  <div class="contact-links">
+    <a
+      href="#"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/AlejandraVC"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="#"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a href="mailto:aleisa.vc@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send a mail</a
+    >
+    <a href="tel:555-555-5555" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call me</a
+    >
+  </div>
+</section>
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+  <p>
+    &copy;Alejandra.V
+  </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
 </body>
 </html>
