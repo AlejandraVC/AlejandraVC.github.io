@@ -127,9 +127,9 @@ button {
 .nav {
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   background: var(--second-blue);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
@@ -433,7 +433,7 @@ button {
 }
 
 #contact-form-title {
-  padding-bottom: 10px;
+  padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid var(--second-blue);
 }
