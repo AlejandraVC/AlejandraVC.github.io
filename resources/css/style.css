@@ -62,7 +62,7 @@ html {
  /* 480px / 16px = 30em */
   @media (max-width: 30em) {
   html {
-    font-size: 45%;
+    font-size: 55%;
   }
 }
 
