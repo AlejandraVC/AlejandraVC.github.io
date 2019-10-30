@@ -577,7 +577,7 @@ footer i {
   @media (max-width: 30em) {
     #popup-window {
       width: 80%;
-      height:65%;
+      height:55%;
     }
 
     .popup-title {
@@ -598,9 +598,9 @@ footer i {
   }
 
   .popup-title {
+    font-size: 3rem;
     padding-top: 20px;
     color: var(--main-red);
-    padding-bottom: 10px;
   }
 
   .popup-content {
