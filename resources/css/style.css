@@ -290,7 +290,7 @@ button {
 }
 
 .project:hover .code {
-  color: #ff7f50;
+  color: var(--main-red);
 }
 
 .project-image {
@@ -301,7 +301,7 @@ button {
 
 .project-title {
   font-size: 2rem;
-  padding: 2rem 0.5rem;
+  padding: 0rem 0.5rem;
 }
 
 .btn {
