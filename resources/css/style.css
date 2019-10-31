@@ -151,7 +151,7 @@ button {
   margin-right: 2rem;
 }
 
-.nav-icon { 
+.mobile { 
   display: none; 
 }
 
@@ -165,11 +165,11 @@ button {
     margin: 0;
   }
 
-  .nav-text { 
+  .desktop { 
     display: none; 
   }
 
-  .nav-icon { 
+  .mobile { 
   display: flex;
   justify-content: space-evenly;
   }
@@ -599,6 +599,8 @@ footer i {
     #popup-window {
       top: 10%;
       height:80%;
+      left: 10%;
+      width: 80%;
     }
 
     .popup-title {
