@@ -173,6 +173,20 @@ button {
   display: flex;
   justify-content: space-evenly;
   }
+
+  .section-icon .mobile-text { 
+    display: none; 
+  }
+  
+  .section-icon:hover .mobile-icon { 
+    display: none; 
+  }
+  
+  .section-icon:hover .mobile-text {
+    display: flex; 
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
 }
 
 .nav-list a {
