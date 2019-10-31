@@ -134,6 +134,39 @@ button {
   }
  }
 
+/* Go to Top - Button */
+#go-top-button {
+  display: none; 
+  position: fixed; 
+  bottom: 45px; /* Place the button at the bottom of the page */
+  right: 45px; /* Place the button 30px from the right */
+  z-index: 99;
+  border: none;
+  /* border: var(--main-white) 1px solid; */
+  outline: none; 
+  background: none;
+  /* background-color: var(--second-blue); */
+  color: var(--main-white);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 35px;
+  opacity: .55;
+}
+
+#go-top-button:hover {
+  /* background-color: var(--main-white);  */
+  /* color: var(--second-blue); */
+  opacity: 1;
+}
+
+ /* 480px / 16px = 30em */
+ @media (max-width: 30em) {
+  #go-top-button {
+    right: 25px;
+    font-size: 25px;
+  }
+ }
+
 /* nav */
 
 .nav {
