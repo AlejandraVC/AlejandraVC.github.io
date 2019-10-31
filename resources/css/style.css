@@ -151,6 +151,10 @@ button {
   margin-right: 2rem;
 }
 
+.nav-icon { 
+  display: none; 
+}
+
  /* 480px / 16px = 30em */
  @media (max-width: 30em) {
   .nav {
@@ -158,7 +162,16 @@ button {
   }
 
   .nav-list {
-    margin: 0 1rem;
+    margin: 0;
+  }
+
+  .nav-text { 
+    display: none; 
+  }
+
+  .nav-icon { 
+  display: flex;
+  justify-content: space-evenly;
   }
 }
 
