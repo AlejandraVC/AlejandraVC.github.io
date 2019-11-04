@@ -8,8 +8,25 @@
   <script type="text/javascript" src="main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-  <link rel="icon" href="resources/av_logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+  <!-- <link rel="icon" href="resources/av_logo.ico" type="image/x-icon"> -->
+  <link rel="apple-touch-icon" sizes="57x57" href="resources/references/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="resources/references/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="resources/references/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="resources/references/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="resources/references/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="resources/references/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="resources/references/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="resources/references/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/references/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="resources/references/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/references/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="resources/references/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/references/favicon-16x16.png">
+  <link rel="manifest" href="resources/references/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="resources/references/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>Alejandra.V</title>
 </head>
 
@@ -163,26 +180,31 @@
     <a href="https://github.com/AlejandraVC" id="profile-link" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
     <a href="https://twitter.com/alejandravcweb" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
     <button id="contact-me" onclick="openContactForm()"><i class="far fa-envelope"></i> Contact me</button>
-    <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+    <a href="" class="btn contact-details call-details">
+      <span class="call-icon"><i class="fas fa-mobile-alt"></i> Call me</span>
+      <span class="call-text">+49 176 4769 4911</span>
+    </a>
+  
   </div>
 </section>
 
 <!-- END CONTACT SECTION -->
 
-<!-- START CONTACT ME SECTION -->
+<!-- START CONTACT FORM SECTION -->
 
-<form id="contact-form">
+<form name="contact-form" id="contact-form" action="/submit.php" onsubmit="return validateContactForm()" method="post">
   <button class="contact-form-close" onclick="openContactForm()"><i class="fas fa-times"></i></button>
   <h3 id="contact-form-title">Contact me</h3>
   <div class="contact-input-info">
-    <p><input type="text" placeholder="NAME"></input></p>
-    <p><input type="email" placeholder="EMAIL"></input></p>
-    <textarea class="contact-message" placeholder="MESSAGE" rows="10"></textarea>
+    <p><input type="text" name="Name" placeholder="NAME"></input></p>
+    <p><input id="contact-email" type="email" name="Email" placeholder="EMAIL"></input></p>
+    <p><input id="contact-subject" type="text" name="Subject" placeholder="SUBJECT"></input></p>
+    <textarea class="contact-message" name="Message" placeholder="MESSAGE" rows="10"></textarea>
   </div>
-  <button id="contact-submit" type="submit">SUBMIT</button>
+  <button id="contact-submit" type="submit" value="send">SUBMIT</button>
 </form>
 
-<!-- END CONTACT ME SECTION -->
+<!-- END CONTACT FORM SECTION -->
 
 <!-- START FOOTER SECTION -->
 
