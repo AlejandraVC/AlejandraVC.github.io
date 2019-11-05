@@ -1,0 +1,11 @@
+-- PAGE CONTENT -- 
+
+ABOUT ME
+
+
+SKILLS
+• Infrastructure: Git, GitHub, Linux/UNIX, Netlify
+• Development: WordPress, MySQL, PHP, JavaScript, HTML5, CSS3, Jekyll, SCSS
+• Design: Sketch, InVision, Adobe Creative Cloud Suite
+• Analytics: Google AdSense, Google Analytics 
+
