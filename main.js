@@ -25,48 +25,6 @@ function openContactForm() {
   }  
 } 
 
-//VALIDATE CONTACT FORM
-
-function validateContactForm()                                    
-{ 
-    let name = document.forms["contact-form"]["Name"];   
-    let email = document.getElementById("contact-email");
-    let subject = document.forms["contact-form"]["Subject"];     
-    let message = document.getElementById("contact-message");           
-    // let email = document.forms["contact-form"]["EMail"];    
-    // let message = document.forms["contact-form"]["Message"];  
-   
-    if (name.value == "")                                  
-    { 
-        window.alert("Please enter your name."); 
-        name.focus(); 
-        return false; 
-    } 
-       
-    if (email.value == "")                                   
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
-        return false; 
-    } 
-
-    if (subject.value == "")                                  
-    { 
-        window.alert("Please enter a subject."); 
-        name.focus(); 
-        return false; 
-    } 
-
-    if (message.value == "")                               
-    { 
-        window.alert("Please enter your message."); 
-        address.focus(); 
-        return false; 
-    } 
-   
-    return true; 
-    }
-
 // GO TO TOP
  // When the user scrolls down 100px from the top of the document, show the button
  window.onscroll = function() {scrollFunction()};
