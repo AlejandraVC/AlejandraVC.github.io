@@ -468,6 +468,19 @@ button {
   cursor: pointer;
 }
 
+.call-details .call-text { 
+  display: none; 
+}
+
+.call-details:hover .call-icon { 
+  display: none; 
+}
+
+.call-details:hover .call-text {
+  display: flex; 
+  padding: .5rem;
+}
+
 /* Contact Me Form */
 
 #contact-form {
@@ -500,10 +513,27 @@ button {
  /* 480px / 16px = 30em */
  @media (max-width: 30em) {
   #contact-form {
-    left: 10%;
-    width: 80%;
+    left: 5%;
+    width: 90%;
     top: 5%;
     height: 90%;
+  }
+
+  .contact-message {
+    margin: 5%;
+  }
+
+  input {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+  }
+
+  #contact-submit{
+    left: 10%;
+    width:80%;
+    padding:5px;
+    margin-top: 2.5%;
   }
 }
 
@@ -511,26 +541,6 @@ button {
   padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid var(--main-blue);
-}
-
-.contact-input-info {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.call-details .call-text { 
-  display: none; 
-}
-
-.call-details:hover .call-icon { 
-  display: none; 
-}
-
-.call-details:hover .call-text {
-  display: flex; 
-  padding: .5rem;
 }
 
 input {
