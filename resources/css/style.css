@@ -496,45 +496,18 @@ button {
   border-radius: 5px;
   z-index: 999;
   transition: all 0.3s;
-  display: none;
+  /* display: none; ------------- */
+  display: block;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  #contact-form {
-    left: 20%;
-    width: 60%;
-  }
-}
-
- /* 480px / 16px = 30em */
- @media (max-width: 30em) {
-  #contact-form {
-    left: 5%;
-    width: 90%;
-    top: 5%;
-    height: 90%;
-  }
-
-  .contact-message {
-    margin: 5%;
-  }
-
-  input {
-    width: 90%;
-    height: 90%;
-    padding: 5px;
-  }
-
-  #contact-submit{
-    left: 10%;
-    width:80%;
-    padding:5px;
-    margin-top: 2.5%;
-  }
+#contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
 }
 
 #contact-form-title {
@@ -557,7 +530,7 @@ input {
 }
 
 input:focus{
-  border-bottom:2px solid var(--main-black);
+  border-bottom:2px solid var(--main-blue);
 }
 
 p:before{
@@ -570,7 +543,7 @@ p:before{
 
 .contact-message {
   box-sizing: border-box;
-  margin: 10%;
+  margin: 0 10%;
   width: 80%;
   resize: none;
   background: var(--main-white);
@@ -578,19 +551,20 @@ p:before{
   border-radius: 5px;
 }
 
+.contact-message:focus{
+  border:2px solid var(--main-blue);
+}
+
 #contact-submit{
   border-radius: 5px;
-  width:30%;
-  padding:10px;
-  margin-top: 7.5%;
-  box-sizing:border-box;
+  padding: 10px;
+  width:50%;
+  margin: 5px auto;
   color: var(--main-white);
   background: var(--main-blue);
   outline:none;
-  resize:none;
   border:0;
   transition:all .5s;
-  border-bottom:2px solid #bebed2
 }
 
 #contact-submit:hover{
@@ -616,6 +590,39 @@ p:before{
   color: var(--main-black);
   cursor: pointer;
   font-size: 100%;
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  #contact-form {
+    left: 20%;
+    width: 60%;
+  }
+}
+
+ /* 480px / 16px = 30em */
+ @media (max-width: 30em) {
+  #contact-form {
+    left: 5%;
+    width: 90%;
+    top: 5%;
+    height: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  #contact-info{
+    height: 60%;
+  }
+
+  .contact-message {
+    margin: 0 5%;
+    width: 90%;
+    resize: both;
+    height: 75px;
+  }
 }
 
 /* Validate Contact Form */
