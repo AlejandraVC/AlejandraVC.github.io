@@ -1,5 +1,6 @@
 :root {
-  --main-white: #EEEEEE;
+  /* --main-white: #EEEEEE; */
+  --main-white: #FFF;
   --main-black: #292939;
   --main-blue: #1B98E0;
   --second-blue: #006494;
@@ -496,8 +497,7 @@ button {
   border-radius: 5px;
   z-index: 999;
   transition: all 0.3s;
-  /* display: none; ------------- */
-  display: block;
+  display: none;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -608,7 +608,7 @@ p:before{
     top: 5%;
     height: 90%;
   }
-
+  
   input {
     width: 90%;
   }
@@ -618,10 +618,11 @@ p:before{
   }
 
   .contact-message {
-    margin: 0 5%;
+    margin: 5px 5%;
     width: 90%;
-    resize: both;
+    resize: vertical;
     height: 75px;
+    overflow: hidden;
   }
 }
 
