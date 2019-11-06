@@ -200,19 +200,29 @@
 
 <!-- START CONTACT FORM SECTION -->
 
-<form name="contact-form" id="contact-form" action="/submit.php" onsubmit="return validateContactForm()" method="post">
-  <button class="contact-form-close" onclick="openContactForm()"><i class="fas fa-times"></i></button>
-  <h3 id="contact-form-title">Contact me</h3>
-  <div class="contact-input-info">
-    <p><input type="text" name="Name" placeholder="NAME"></input></p>
-    <p><input id="contact-email" type="email" name="Email" placeholder="EMAIL"></input></p>
-    <p><input id="contact-subject" type="text" name="Subject" placeholder="SUBJECT"></input></p>
-    <textarea class="contact-message" name="Message" placeholder="MESSAGE" rows="10"></textarea>
-  </div>
-  <button id="contact-submit" type="submit" value="send">SUBMIT</button>
-</form>
+<div id="contact-form">
+    <button class="contact-form-close" onclick="openContactForm()"><i class="fas fa-times"></i></button>
+  <h3 id="contact-form-title">CONTACT ME</h3>
+  <div id="error_message"></div>
+  <form action="" id="myform" onsubmit = "return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="NAME" id="contact-name">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="EMAIL" id="contact-email">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="SUBJECT" id="contact-subject">
+    </div>
+    <div class="input_field">
+        <textarea class="contact-message" placeholder="MESSAGE" id="contact-message" rows="10"></textarea>
+    </div>
+    <button id="contact-submit" type="submit">SUBMIT</button>
+  </form>
+</div>
 
 <!-- END CONTACT FORM SECTION -->
+
 
 <!-- START FOOTER SECTION -->
 

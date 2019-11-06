@@ -451,8 +451,6 @@ button {
   transform: translateY(8px);
 }
 
-/* Contact Me Form */
-
 #contact-me {
   border: none;
   font-family: 'Roboto Condensed', sans-serif;
@@ -469,6 +467,8 @@ button {
   transform: translateY(8px);
   cursor: pointer;
 }
+
+/* Contact Me Form */
 
 #contact-form {
   position: fixed;
@@ -535,6 +535,7 @@ button {
 
 input {
   width: 80%;
+  height: 80%;
   padding: 10px;
   box-sizing: border-box;
   background: none;
@@ -607,6 +608,16 @@ p:before{
   font-size: 100%;
 }
 
+/* Validate Contact Form */
+#error_message{
+  margin-bottom: 20px;
+  background: var(--main-red);
+  color: var(--main-white);
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
 
 /* Footer */
 

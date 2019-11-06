@@ -1,9 +1,12 @@
 const projectName = 'portfolio';
 
+//DISABLE SCROLLING WHEN PAGE OPENS
+//for under construction popup
 window.onload = function () { 
   document.body.style.overflowY = "hidden";
 }
     
+//CLOSE UNDER CONSTRUCTION POPUP
 function closePopup() {
   let popupWindow = document.getElementById("popup-window");
   if (popupWindow.style.display === "none") {
@@ -14,6 +17,7 @@ function closePopup() {
   }
 } 
 
+//OPEN/CLOSE CONTACT FORM POPUP
 function openContactForm() {
   let contactForm = document.getElementById("contact-form");
   if (contactForm.style.display === "none") {
@@ -42,3 +46,40 @@ function openContactForm() {
    document.body.scrollTop = 0; // For Safari
    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
  }
+
+ //VALIDATE CONTACT FORM
+ function validate(){
+  let name = document.getElementById("contact-name").value;
+  let subject = document.getElementById("contact-subject").value;
+  let email = document.getElementById("contact-email").value;
+  let message = document.getElementById("contact-message").value;
+  let error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  let text;
+  if(name.length < 3){
+    text = "Please enter a valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please enter a valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 3){
+    text = "Please enter a valid Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 20){
+    text = "Please enter a valid Message";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  error_message.style.display = "none";
+  openContactForm();
+  return true;
+}
