@@ -619,7 +619,7 @@ p:before{
   cursor: pointer;
 }
 
-.contact-form-close, .popup-close {
+.contact-form-close{
   color: var(--main-red);
   font-size: 95%;
   background: none;
@@ -632,7 +632,7 @@ p:before{
   border: none;
 }
 
-.contact-form-close:hover , .popup-close:hover{
+.contact-form-close:hover{
   color: var(--main-black);
   cursor: pointer;
   font-size: 100%;
@@ -712,72 +712,3 @@ footer i {
     margin-bottom: 15px;
   }
 }
-
-  /* Under-Construction Section */
-  #popup-window {
-    position: fixed;
-    background-color: var(--main-white);
-    color: var(--main-black);
-    top: 25%;
-    left: 20%;
-    z-index: 999;
-    transition: all 0.3s;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 60%;
-    height: 65%;
-    border: 8px solid var(--main-red);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-  }
-
-  /* 480px / 16px = 30em */
-  @media (max-width: 30em) {
-    #popup-window {
-      top: 10%;
-      height:80%;
-      left: 10%;
-      width: 80%;
-    }
-
-    .popup-title {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    .popup-content {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-    .popup-signature{
-      padding-top: 0;
-    }
-  }
-
-  .popup-title {
-    font-size: 3rem;
-    padding-top: 20px;
-    color: var(--main-red);
-  }
-
-  .popup-content {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .popup-signature{
-    padding-top: 20px;
-    color: var(--main-black);
-    font-size: 2rem;
-  }
-
-
-  
-  

@@ -1,22 +1,5 @@
 const projectName = 'portfolio';
 
-//DISABLE SCROLLING WHEN PAGE OPENS
-//for under construction popup
-window.onload = function () { 
-  document.body.style.overflowY = "hidden";
-}
-    
-//CLOSE UNDER CONSTRUCTION POPUP
-function closePopup() {
-  let popupWindow = document.getElementById("popup-window");
-  if (popupWindow.style.display === "none") {
-    popupWindow.style.display = "block";
-  } else {
-    popupWindow.style.display = "none";
-    document.body.style.overflowY = "scroll";
-  }
-} 
-
 //OPEN/CLOSE CONTACT FORM POPUP
 function openContactForm() {
   let contactForm = document.getElementById("contact-form");
