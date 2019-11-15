@@ -53,7 +53,7 @@ a {
 
 .section-partition {
   width: 100%;
-  border: 4px solid var(--main-white);
+  border-top: 4px solid var(--main-white);
 }
 
 .sub-section-partition {
@@ -267,6 +267,10 @@ a {
 
  /* 480px / 16px = 30em */
 @media (max-width: 30em) {
+  #welcome {
+    height: 85vh;
+  }
+
   .image-me {
     margin-top: 0;
   }
@@ -342,13 +346,15 @@ a {
 /* 480px / 16px = 30em */
 @media (max-width: 30em) {
   #contact {
-    height: 85vh;
+    height: 80vh;
+    justify-content: space-evenly;
   }
   .contact-section-header > h2 {
     font-size: 4rem;
   }
 
   .contact-options {
+    margin-top: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -360,6 +366,10 @@ a {
   
   .contact-option:hover {
     transform: none;
+  }
+
+  .call-details:hover .call-text {
+    padding: 0;
   }
 }
 
