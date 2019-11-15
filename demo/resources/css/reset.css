@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	/* Set font size for easy rem calculations
+	 * default document font size = 16px, 1rem = 16px, 100% = 16px
+	 * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+	*/
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+  }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+/* CHANGE FONT SIZE DEPENDING ON SCREEN WIDTH */
+/* 1600px / 16px = 100em */
+@media (min-width: 100em) {
+	html {
+	  font-size: 80%;
+	}
+  }
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+	html {
+	  font-size: 65%;
+	}
+}
+  
+/* 768px / 16px = 48em */
+@media (max-width: 48em) {
+	html {
+	  font-size: 56%;
+	}
+}
+  
+/* 480px / 16px = 30em */
+@media (max-width: 30em) {
+	html {
+	  font-size: 55%;
+	}
+}
