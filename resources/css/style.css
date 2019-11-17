@@ -143,16 +143,7 @@ a {
     display: flex;
     justify-content: center;
   }
-
-  .nav-mobile .mobile-text,  .nav-mobile:hover .mobile-icon{ 
-    display: none; 
-  }
   
-  .nav-mobile:hover .mobile-text {
-    display: inline;
-    font-size: 1.5rem; /* 15px */
-    padding-top: 5px;
-  }
 }
 
 /* welcome section */
@@ -311,12 +302,12 @@ a {
   margin: auto;
 }
 
-.code {
+.project-title-adornment {
   color: var(--main-black);
   transition: color 0.3s ease-out;
 }
 
-.project:hover .code {
+.project:hover .project-title-adornment {
   color: var(--main-red);
 }
 
@@ -412,19 +403,6 @@ a {
   transform: translateY(8px);
 }
 
-.call-details .call-text { 
-  display: none; 
-}
-
-.call-details:hover .call-icon { 
-  display: none; 
-}
-
-.call-details:hover .call-text {
-  display: flex; 
-  padding: .5rem;
-}
-
 /* 480px / 16px = 30em */
 @media (max-width: 30em) {
   #contact {
@@ -448,10 +426,7 @@ a {
   
   .contact-option:hover {
     transform: none;
-  }
-
-  .call-details:hover .call-text {
-    padding: 0;
+    color: var(--main-blue);
   }
 }
 
@@ -511,7 +486,6 @@ input {
   color: var(--main-white);
   font-weight: bolder;
   width: 80%;
-  box-sizing: border-box;
   background: none;
   outline: none;
   resize: none;
@@ -528,7 +502,6 @@ input:focus{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: .75em;
   font-weight: 400;
-  box-sizing: border-box;
   width: 80%;
   resize: none;
   color: var(--second-blue);

@@ -21,7 +21,7 @@
 // Open/Close Contact Form Modal
 function openContactForm() {
   let contactForm = document.getElementById("contact-me-form");
-  if (contactForm.style.display === "none") {
+  if (contactForm.style.display !== "block") {
     contactForm.style.display = "block";
     document.body.style.overflowY = "hidden";
   } else {
@@ -32,37 +32,42 @@ function openContactForm() {
 
 //Validate Contact Form content
 function validate(){
-  let name = document.getElementById("contact-name").value;
-  let subject = document.getElementById("contact-subject").value;
-  let email = document.getElementById("contact-email").value;
-  let message = document.getElementById("contact-message").value;
-  let error_message = document.getElementById("error_message");
+  const name = document.getElementById("contact-name").value;
+  const subject = document.getElementById("contact-subject").value;
+  const email = document.getElementById("contact-email").value;
+  const message = document.getElementById("contact-message").value;
+  let errorMessage = document.getElementById("error_message");
   
-  error_message.style.padding = "10px";
+  errorMessage.style.padding = "10px";
   
   let text;
-  if(name.length < 3){
+
+  if(name.length === 0){
     text = "PLEASE ENTER A VALID NAME";
-    error_message.innerHTML = text;
+    errorMessage.innerHTML = text;
     return false;
   }
+
   if(email.indexOf("@") == -1 || email.length < 6){
     text = "PLEASE ENTER A VALID EMAIL";
-    error_message.innerHTML = text;
+    errorMessage.innerHTML = text;
     return false;
   }
+
   if(subject.length < 3){
     text = "PLEASE ENTER A VALID SUBJECT";
-    error_message.innerHTML = text;
+    errorMessage.innerHTML = text;
     return false;
   }
+
   if(message.length <= 20){
     text = "PLEASE ENTER A VALID MESSAGE";
-    error_message.innerHTML = text;
+    errorMessage.innerHTML = text;
     return false;
   }
+
   alert("Form Submitted Successfully!");
-  error_message.style.display = "none";
+  errorMessage.style.display = "none";
   openContactForm();
   return true;
 }
