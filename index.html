@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-  <script type="text/javascript" src="main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="main.js"></script>
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
   <link rel="apple-touch-icon" sizes="57x57" href="resources/references/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="resources/references/apple-icon-60x60.png">
@@ -26,6 +28,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="resources/references/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151530778-1"></script>
   <script>
@@ -38,17 +41,189 @@
   <title>Alejandra.V</title>
 </head>
 
-<body id="container">
-<!-- START UNDER-CONSTRUCTION SECTION -->
-<div id="popup-window">
-  <div class="popup-content"> 
-    <p class="bold caps popup-title">Site under construction</p>
-    <p>I'm actively working on this site<br>
-    I'm doing my best to have it up and running as soon as possible<br>
-    <h4 class="popup-signature">Alejandra.V</h4>
+<body id="body">
+  <button onclick="goToTop()" id="go-top-button" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+    
+<!-- nav -->
+
+<nav class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome" class="nav-desktop">Welcome</a>
+      <a href="#welcome" class="nav-mobile">
+        <span class="mobile-icon"><i class="fas fa-home"></i></span>
+        <span class="mobile-text">Welcome</span>
+      </a>
+    </li>
+    <li>
+      <a href="#about-me" class="nav-desktop">About Me</a>
+      <a href="#about-me" class="nav-mobile">
+        <span class="mobile-icon"><i class="fas fa-id-card"></i></span>
+        <span class="mobile-text">About Me</span>
+      </a>
+    </li>
+    <li>
+      <a href="#portfolio" class="nav-desktop">Portfolio</a>
+      <a href="#portfolio" class="nav-mobile">
+        <span class="mobile-icon"><i class="fas fa-images"></i></span>
+        <span class="mobile-text">Portfolio</span>
+      </a>
+    </li>
+    <li>
+      <a href="#contact" class="nav-desktop">Contact</a>
+      <a href="#contact" class="nav-mobile">
+        <span class="mobile-icon"><i class="fas fa-envelope"></i></span>
+        <span class="mobile-text">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Welcome section -->
+
+<section id="welcome">
+  <h1>Alejandra.V</h1>
+  <img class="main-logo" src="resources/img/av_logo.png">
+  <p>web development</p>
+</section>
+
+<hr class="section-partition">
+
+<!-- About Me section -->
+
+<section id="about-me">
+  <h2 class="section-header">About Me</h2>
+  <div id="me">
+    <img class="image-me" src="resources/img/alejandra.jpg" alt="Foto of me in Prague">
+    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam minima explicabo assumenda possimus neque, nihil magni sint quos necessitatibus deleniti dolore quidem, aliquam architecto aliquid eveniet consequuntur perferendis alias nemo.
+      <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores expedita minus beatae delectus veniam sapiente enim aut odit optio?
+    </p>
   </div>
+  <hr class="sub-section-partition">
+  <h3 class="skills-header">Skills</h3>
+    <div class="skill-boxes">
+      <div class="skill-box">
+        <img class="skill-logo" src="resources/img/html5_logo.png">
+        <h3>HTML5</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores expedita minus beatae delectus veniam sapiente enim aut odit optio?</p>
+      </div>
+      <div class="skill-box">
+        <img class="skill-logo" src="resources/img/css3_logo.png">
+        <h3>CSS3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores expedita minus beatae delectus veniam sapiente enim aut odit optio?</p>
+      </div>
+      <div class="skill-box">
+        <img class="skill-logo" src="resources/img/javascript_logo.png">
+        <h3>JavaScript</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores expedita minus beatae delectus veniam sapiente enim aut odit optio?</p>
+      </div>
+    </div>
+</section>
+
+<hr class="section-partition">
+
+<!-- Portfolio section -->
+
+<section id="portfolio">
+  <h2 class="section-header">These are some of my projects</h2>
+  
+    <div class="projects-grid">
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 1
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 2
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 3
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 4
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 5
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 6
+          <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+  
+  <a href="#" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
+</section>
+
+<hr class="section-partition">
+
+<!-- Contact section -->
+
+<section id="contact">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+    <p>How do you take your coffee?</p>
+  </div>
+<div class="contact-options">
+  <p class="btn contact-option" onclick="openContactForm()"><i class="far fa-envelope"></i> Contact me</p>
+  <a href="" class="btn contact-option call-details">
+    <span class="call-icon"><i class="fas fa-mobile-alt"></i> Call me</span>
+    <span class="call-text">+49 176 4769 4911</span>
+  </a>
+  <a href="https://github.com/AlejandraVC" id="profile-link" target="_blank" class="btn contact-option"><i class="fab fa-github"></i> GitHub</a>
+  <a href="https://www.facebook.com/alejandravweb/" target="_blank" class="btn contact-option"><i class="fab fa-facebook-square"></i> Facebook</a>
+  <a href="https://twitter.com/alejandravcweb" target="_blank" class="btn contact-option"><i class="fab fa-twitter"></i> Twitter</a>
 </div>
 
-<!-- END UNDER-CONSTRUCTION SECTION -->
+  <!-- Contact form -->
+  <div id="contact-me-form">
+    <button class="close-contact-me-form" onclick="openContactForm()"><i class="fas fa-times"></i></button>
+    <h3 class="contact-me-form-header">CONTACT ME</h3>
+    <div id="error_message"></div>
+      <form class="contact-info" action="" onsubmit = "return validate();">
+        <div>
+          <input type="text" placeholder="NAME" id="contact-name">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="EMAIL" id="contact-email">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="SUBJECT" id="contact-subject">
+        </div>
+        <div class="input_field">
+          <textarea class="contact-message" placeholder="MESSAGE" id="contact-message" rows="10"></textarea>
+        </div>
+        <button id="contact-form-submit" type="submit">SUBMIT</button>
+      </form>
+  </div>
+</section>
+
+<!-- footer -->
+
+<footer>
+  <p>Alejandra.V - Web Development, Copyright &copy; 2019</p>
+</footer>
+
 </body>
 </html>
