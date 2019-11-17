@@ -1,3 +1,5 @@
 # AlejandraVC.github.io
-This is my first website.
-Status: Ongoing.
+
+Open index.html file on a browser.
+
+https://alejandrav.me
