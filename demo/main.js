@@ -1,10 +1,10 @@
 
 // Go To Top
- // When the user scrolls down 300px from the top of the document, show the button
+ // When the user scrolls down 500px from the top of the document, show the button
  window.onscroll = function() {scrollFunction()};
 
  function scrollFunction() {
-   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
      document.getElementById("go-top-button").style.display = "block";
    } else {
      document.getElementById("go-top-button").style.display = "none";
@@ -20,7 +20,7 @@
 
 // Open/Close Contact Form Modal
 function openContactForm() {
-  let contactForm = document.getElementById("contact-form");
+  let contactForm = document.getElementById("contact-me-form");
   if (contactForm.style.display === "none") {
     contactForm.style.display = "block";
     document.body.style.overflowY = "hidden";
@@ -42,22 +42,22 @@ function validate(){
   
   let text;
   if(name.length < 3){
-    text = "Please enter a valid Name";
+    text = "PLEASE ENTER A VALID NAME";
     error_message.innerHTML = text;
     return false;
   }
   if(email.indexOf("@") == -1 || email.length < 6){
-    text = "Please enter a valid Email";
+    text = "PLEASE ENTER A VALID EMAIL";
     error_message.innerHTML = text;
     return false;
   }
   if(subject.length < 3){
-    text = "Please enter a valid Subject";
+    text = "PLEASE ENTER A VALID SUBJECT";
     error_message.innerHTML = text;
     return false;
   }
   if(message.length <= 20){
-    text = "Please enter a valid Message";
+    text = "PLEASE ENTER A VALID MESSAGE";
     error_message.innerHTML = text;
     return false;
   }

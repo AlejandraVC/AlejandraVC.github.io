@@ -127,6 +127,53 @@
 
 <section id="portfolio">
   <h2 class="section-header">These are some of my projects</h2>
+  
+    <div class="projects-grid">
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 1
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 2
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 3
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 4
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 5
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="#" target="_blank" class="project project-tile">
+        <img class="project-image" src="resources/img/project-screenshot.png" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span> PROJECT 6
+          <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+  
+  <a href="#" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a>
 </section>
 
 <hr class="section-partition">
@@ -139,7 +186,7 @@
     <p>How do you take your coffee?</p>
   </div>
 <div class="contact-options">
-  <a href="" id="contact-me" onclick="openContactForm()" class="btn contact-option"><i class="far fa-envelope"></i> Contact me</a>
+  <p class="btn contact-option" onclick="openContactForm()"><i class="far fa-envelope"></i> Contact me</p>
   <a href="" class="btn contact-option call-details">
     <span class="call-icon"><i class="fas fa-mobile-alt"></i> Call me</span>
     <span class="call-text">+49 176 4769 4911</span>
@@ -150,7 +197,26 @@
 </div>
 
   <!-- Contact form -->
-
+  <div id="contact-me-form">
+    <button class="close-contact-me-form" onclick="openContactForm()"><i class="fas fa-times"></i></button>
+    <h3 class="contact-me-form-header">CONTACT ME</h3>
+    <div id="error_message"></div>
+      <form class="contact-info" action="" onsubmit = "return validate();">
+        <div>
+          <input type="text" placeholder="NAME" id="contact-name">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="EMAIL" id="contact-email">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="SUBJECT" id="contact-subject">
+        </div>
+        <div class="input_field">
+          <textarea class="contact-message" placeholder="MESSAGE" id="contact-message" rows="10"></textarea>
+        </div>
+        <button id="contact-form-submit" type="submit">SUBMIT</button>
+      </form>
+  </div>
 </section>
 
 <!-- footer -->
@@ -160,5 +226,4 @@
 </footer>
 
 </body>
-<!-- <script src="main.js"></script> -->
 </html>
