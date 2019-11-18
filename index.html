@@ -331,18 +331,39 @@
         </button>
         <h3 class="contact-me-form-header">CONTACT ME</h3>
         <div id="error_message"></div>
-        <form class="contact-info" action="" onsubmit="return validate();">
+        <form
+          class="contact-info"
+          action="https://formspree.io/mbjjqbwy"
+          method="POST"
+          onsubmit="return validate();"
+        >
           <div>
-            <input type="text" placeholder="NAME" id="contact-name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="NAME"
+              id="contact-name"
+            />
           </div>
           <div class="input_field">
-            <input type="text" placeholder="EMAIL" id="contact-email" />
+            <input
+              type="email"
+              name="email"
+              placeholder="EMAIL"
+              id="contact-email"
+            />
           </div>
           <div class="input_field">
-            <input type="text" placeholder="SUBJECT" id="contact-subject" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="SUBJECT"
+              id="contact-subject"
+            />
           </div>
           <div class="input_field">
             <textarea
+              name="message"
               class="contact-message"
               placeholder="MESSAGE"
               id="contact-message"
