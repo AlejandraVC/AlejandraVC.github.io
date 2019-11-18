@@ -24,9 +24,11 @@ function goToTop() {
 // Open/Close Contact Form Modal
 function openContactForm() {
   let contactForm = document.getElementById('contact-me-form');
+  let goTopButton = document.getElementById('go-top-button');
   if (contactForm.style.display !== 'block') {
     contactForm.style.display = 'block';
     document.body.style.overflowY = 'hidden';
+    goTopButton.style.display = 'none';
   } else {
     contactForm.style.display = 'none';
     document.body.style.overflowY = 'scroll';
