@@ -337,11 +337,6 @@ a {
   transition: all 0.5s;
 }
 
-.btn-show-all:hover {
-  color: var(--main-white);
-  background: var(--main-black);
-}
-
 .btn-show-all > i {
   margin-left: 10px;
   transform: translateX(0);
