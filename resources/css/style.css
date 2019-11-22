@@ -538,6 +538,7 @@ input {
   resize: none;
   border: 0;
   transition: all 0.3s;
+  border-radius: 0.75rem;
 }
 
 .contact-message {
@@ -582,9 +583,9 @@ input {
 /* 480px / 16px = 30em */
 @media (max-width: 30em) {
   #contact-me-form {
+    left: 10%;
     top: 7.5%;
-    left: 5%;
-    width: 90%;
+    width: 80%;
     height: 85%;
     border: 4px solid var(--main-white);
   }
