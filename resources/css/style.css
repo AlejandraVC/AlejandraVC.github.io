@@ -355,12 +355,12 @@ a {
 }
 
 .project-title-adornment {
-  color: var(--main-black);
+  display: none;
   transition: color 0.3s ease-out;
 }
 
 .project:hover .project-title-adornment {
-  color: var(--alert-red);
+  display: inline;
 }
 
 .project-image {

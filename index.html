@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d6c7f0c39e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Icons -->
     <link
@@ -114,7 +118,7 @@
 
   <body id="body">
     <button onclick="goToTop()" id="go-top-button" title="Go to top">
-      <i class="fas fa-arrow-circle-up"></i>
+      <i aria-hidden="true" class="fas fa-arrow-circle-up"></i>
     </button>
 
     <!-- nav -->
@@ -123,24 +127,42 @@
       <ul class="nav-list">
         <li>
           <a href="#welcome" class="nav-desktop">Welcome</a>
-          <a href="#welcome" class="nav-mobile"><i class="fas fa-home"></i></a>
+          <a href="#welcome" class="nav-mobile"
+            ><i
+              aria-hidden="true"
+              class="fas fa-home"
+              title="Go to Home section"
+            ></i
+          ></a>
         </li>
         <li>
           <a href="#about-me" class="nav-desktop">About Me</a>
           <a href="#about-me" class="nav-mobile"
-            ><i class="fas fa-id-card"></i
+            ><i
+              aria-hidden="true"
+              class="fas fa-id-card"
+              title="Go to About Me section"
+            ></i
           ></a>
         </li>
         <li>
           <a href="#portfolio" class="nav-desktop">Portfolio</a>
           <a href="#portfolio" class="nav-mobile"
-            ><i class="fas fa-images"></i
+            ><i
+              aria-hidden="true"
+              class="fas fa-images"
+              title="Go to Portfolio section"
+            ></i
           ></a>
         </li>
         <li>
           <a href="#contact" class="nav-desktop">Contact</a>
           <a href="#contact" class="nav-mobile"
-            ><i class="fas fa-envelope"></i
+            ><i
+              aria-hidden="true"
+              class="fas fa-envelope"
+              title="Go to Contact section"
+            ></i
           ></a>
         </li>
       </ul>
@@ -150,7 +172,11 @@
 
     <section id="welcome">
       <h1>Alejandra.V</h1>
-      <img class="main-logo" src="resources/img/av_logo.png" />
+      <img
+        class="main-logo"
+        src="resources/img/av_logo.png"
+        alt="alejandra.v logo"
+      />
       <p>web development</p>
     </section>
 
@@ -177,10 +203,10 @@
           <br /><br />My passions include webdev, computer technologies, design,
           3D and AI. I have chosen to become a web developer for how dynamic the
           environment is and the impact it has in modern world. <br />
-          <br /><i class="fas fa-dragon"></i> Random Facts<br />I’m part of a
-          football team, I play as a striker. I enjoy cooking for others, eating
-          (mostly Mexican food), travelling, reading, bike rides, chilling at
-          the couch on the weekends and rainy nights.
+          <br /><i aria-hidden="true" class="fas fa-dragon"></i> Random Facts<br />I’m
+          part of a football team, I play as a striker. I enjoy cooking for
+          others, eating (mostly Mexican food), travelling, reading, bike rides,
+          chilling at the couch on the weekends and rainy nights.
         </p>
       </div>
       <hr class="sub-section-partition" />
@@ -190,6 +216,7 @@
           <img
             class="main-skill-logo"
             src="resources/img/logos/html5_logo.png"
+            alt="HTML5 logo"
           />
           <h3>HTML5</h3>
           <p></p>
@@ -198,6 +225,7 @@
           <img
             class="main-skill-logo"
             src="resources/img/logos/css3_logo.png"
+            alt="CSS3 logo"
           />
           <h3>CSS3</h3>
           <p></p>
@@ -206,6 +234,7 @@
           <img
             class="main-skill-logo"
             src="resources/img/logos/javascript_logo.png"
+            alt="JavaScript logo"
           />
           <h3>JavaScript</h3>
           <p></p>
@@ -216,6 +245,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/nodejs_logo.png"
+            alt="Node.js logo"
           />
           <h4>Node.js</h4>
         </div>
@@ -223,6 +253,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/react_logo.png"
+            alt="React logo"
           />
           <h4>React</h4>
         </div>
@@ -230,6 +261,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/sketch_logo.png"
+            alt="Sketch logo"
           />
           <h4>Sketch</h4>
           <p></p>
@@ -238,6 +270,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/git_logo_black.png"
+            alt="Git logo"
           />
           <h4>Git</h4>
           <p></p>
@@ -246,6 +279,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/netlifly_logo.png"
+            alt="Netlifly logo"
           />
           <h4>Netlifly</h4>
           <p></p>
@@ -254,6 +288,7 @@
           <img
             class="secondary-skill-logo"
             src="resources/img/logos/mysql_logo.webp"
+            alt="MySQL logo"
           />
           <h4>MySQL</h4>
           <p></p>
@@ -353,33 +388,57 @@
       </div>
       <div class="contact-options">
         <p class="btn contact-option" onclick="openContactForm()">
-          <i class="far fa-envelope"></i> Contact me
+          <i
+            aria-hidden="true"
+            class="far fa-envelope"
+            title="Open Contact Me form"
+          ></i>
+          Contact me
         </p>
         <a
           href="https://github.com/AlejandraVC"
           id="profile-link"
           target="_blank"
           class="btn contact-option"
-          ><i class="fab fa-github"></i> GitHub</a
+          ><i
+            aria-hidden="true"
+            class="fab fa-github"
+            title="Open Github profile"
+          ></i>
+          GitHub</a
         >
         <a
           href="https://www.linkedin.com/in/alejandravch/"
           target="_blank"
           class="btn contact-option"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
+          ><i
+            aria-hidden="true"
+            class="fab fa-linkedin"
+            title="Open LinkedIn profile"
+          ></i>
+          LinkedIn</a
         >
         <a
           href="https://twitter.com/alejandravcweb"
           target="_blank"
           class="btn contact-option"
-          ><i class="fab fa-twitter"></i> Twitter</a
+          ><i
+            aria-hidden="true"
+            class="fab fa-twitter"
+            title="Open Twitter profile"
+          ></i>
+          Twitter</a
         >
       </div>
 
       <!-- Contact form -->
       <div id="contact-me-form">
         <button class="close-contact-me-form" onclick="openContactForm()">
-          <i class="fas fa-times"></i>
+          <i
+            aria-hidden="true"
+            class="fas fa-times"
+            title="Close contact form"
+          ></i>
         </button>
         <h3 class="contact-me-form-header">CONTACT ME</h3>
         <div id="error_message"></div>
@@ -435,6 +494,6 @@
       <p>Alejandra.V - Web Development &copy; 2019</p>
     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
