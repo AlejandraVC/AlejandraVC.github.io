@@ -46,6 +46,12 @@ a {
   background: var(--main-blue);
 }
 
+.section-header {
+  padding-top: 3rem;
+  margin: 0 auto 3rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
 .section-partition {
   width: 100%;
   border-top: 4px solid var(--main-white);
@@ -56,12 +62,6 @@ a {
   border: 1px solid var(--main-white);
 }
 
-.section-header {
-  padding-top: 3rem;
-  margin: 0 auto 3rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
 /* 480px / 16px = 30em */
 @media (max-width: 30em) {
   #body {
@@ -69,10 +69,10 @@ a {
   }
 
   .section-header {
-    width: 50%;
+    width: 85%;
     font-size: 3rem;
     padding-top: 0.5em;
-    margin: 0 0 0.75em 0;
+    margin: 0 auto 0.75em auto;
   }
 
   .section-partition {
@@ -172,12 +172,6 @@ a {
   width: 100%;
   background: var(--main-red);
   padding-bottom: 2rem;
-}
-
-.section-header {
-  padding-top: 3rem;
-  margin: 0 auto 3rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
 }
 
 #me {
@@ -341,6 +335,7 @@ a {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
+  padding-top: 5rem;
 }
 
 .project {
@@ -404,6 +399,7 @@ a {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 }
 
