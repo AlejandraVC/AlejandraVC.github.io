@@ -1,5 +1,6 @@
 {
   "name": "movie-finder",
+  "homepage": "https://alejandrav.me/portfolio/movie-finder-finder/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
