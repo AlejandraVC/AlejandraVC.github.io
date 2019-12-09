@@ -4,6 +4,8 @@ import BusinessList from '../BusinessList/BusinessList'
 import SearchBar from '../SearchBar/SearchBar'
 import Yelp from '../../util/Yelp'
 
+console.log(process.env.YELP)
+
 class App extends React.Component {
   constructor(props) {
     super(props)
