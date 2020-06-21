@@ -1,0 +1,47 @@
+.logo-banner {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+@media screen and (min-width: 640px) {
+  .logo-banner {
+    left: 25%;
+  }
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  animation: type 3s steps(18);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 21ch;
+}
+
+.cursor {
+  color: #00baff;
+  animation: blinking 1s infinite;
+}
+
+.typing {
+  animation: none;
+}
+
+@keyframes blinking {
+  0% {
+    color: #00baff;
+  }
+  49% {
+    color: #00baff;
+  }
+
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #00baff;
+  }
+}
