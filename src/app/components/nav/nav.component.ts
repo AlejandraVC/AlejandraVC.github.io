@@ -1,9 +1,9 @@
 import { Component, OnInit, HostListener } from '@angular/core'
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-nav-bar',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css'],
+  styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
   public innerWidth: number

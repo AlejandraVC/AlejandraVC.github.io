@@ -1,51 +1,56 @@
-<section id="contact" class="w-full text-center">
-  <div>
-    <h2>Let's work together...</h2>
-    <p>How do you take your coffee?</p>
-  </div>
-  <div>
-    <p onclick="openContactForm()">
-      <i
-        aria-hidden="true"
-        class="far fa-envelope"
-        title="Open Contact Me form"
-      ></i>
-      Contact me
-    </p>
-    <a
-      href="https://github.com/AlejandraVC"
-      id="profile-link"
-      target="_blank"
-      class="btn contact-option"
-      ><i
-        aria-hidden="true"
-        class="fab fa-github"
-        title="Open Github profile"
-      ></i>
-      GitHub</a
-    >
-    <a
-      href="https://www.linkedin.com/in/alejandravch/"
-      target="_blank"
-      class="btn contact-option"
-      ><i
-        aria-hidden="true"
-        class="fab fa-linkedin"
-        title="Open LinkedIn profile"
-      ></i>
-      LinkedIn</a
-    >
-    <a
-      href="https://twitter.com/alejandravcweb"
-      target="_blank"
-      class="btn contact-option"
-      ><i
-        aria-hidden="true"
-        class="fab fa-twitter"
-        title="Open Twitter profile"
-      ></i>
-      Twitter</a
-    >
+<section
+  id="contact-me"
+  class="flex flex-wrap overflow-scroll m-auto text-center"
+>
+  <div class="p-4 w-auto md:w-1/2 mx-auto">
+    <div>
+      <h2>Let's work together...</h2>
+      <p>How do you take your coffee?</p>
+    </div>
+    <div>
+      <p onclick="openContactForm()">
+        <i
+          aria-hidden="true"
+          class="far fa-envelope"
+          title="Open Contact Me form"
+        ></i>
+        Contact me
+      </p>
+      <a
+        href="https://github.com/AlejandraVC"
+        id="profile-link"
+        target="_blank"
+        class="btn contact-option"
+        ><i
+          aria-hidden="true"
+          class="fab fa-github"
+          title="Open Github profile"
+        ></i>
+        GitHub</a
+      >
+      <a
+        href="https://www.linkedin.com/in/alejandravch/"
+        target="_blank"
+        class="btn contact-option"
+        ><i
+          aria-hidden="true"
+          class="fab fa-linkedin"
+          title="Open LinkedIn profile"
+        ></i>
+        LinkedIn</a
+      >
+      <a
+        href="https://twitter.com/alejandravcweb"
+        target="_blank"
+        class="btn contact-option"
+        ><i
+          aria-hidden="true"
+          class="fab fa-twitter"
+          title="Open Twitter profile"
+        ></i>
+        Twitter</a
+      >
+    </div>
   </div>
 
   <!-- Contact form -->
@@ -95,116 +100,69 @@
     </form>
   </div> -->
 
-  <form class="w-full mx-auto max-w-lg">
+  <form class="p-4 w-full mx-auto max-w-lg text-sm">
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
         <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-first-name"
+          class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
+          for="name"
         >
-          First Name
+          Name
         </label>
         <input
-          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="grid-first-name"
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white"
+          id="name"
           type="text"
-          placeholder="Jane"
+          placeholder="Name LastName"
         />
-        <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+        <p class="text-red-500 text-left">Please fill out this field.</p>
       </div>
       <div class="w-full md:w-1/2 px-3">
         <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-last-name"
+          class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
+          for="email"
         >
-          Last Name
+          Email
         </label>
         <input
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-          id="grid-last-name"
-          type="text"
-          placeholder="Doe"
+          id="email"
+          type="email"
+          placeholder="email@mail.com"
         />
       </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full px-3">
         <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-password"
+          class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
+          for="subject"
         >
-          Password
+          Subject
         </label>
         <input
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-          id="grid-password"
-          type="password"
-          placeholder="******************"
+          id="subject"
+          type="text"
+          placeholder="Subject"
         />
-        <p class="text-gray-600 text-xs italic">
-          Make it as long and as crazy as you'd like
-        </p>
       </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-2">
-      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+      <div class="w-full px-3">
         <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-city"
+          class="block uppercase tracking-wide text-gray-700 font-bold mb-2"
+          for="message"
         >
-          City
+          Message
         </label>
-        <input
-          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-          id="grid-city"
+        <textarea
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="message"
           type="text"
-          placeholder="Albuquerque"
-        />
-      </div>
-      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-        <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-state"
-        >
-          State
-        </label>
-        <div class="relative">
-          <select
-            class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-state"
-          >
-            <option>New Mexico</option>
-            <option>Missouri</option>
-            <option>Texas</option>
-          </select>
-          <div
-            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-          >
-            <svg
-              class="fill-current h-4 w-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-        <label
-          class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          for="grid-zip"
-        >
-          Zip
-        </label>
-        <input
-          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-          id="grid-zip"
-          type="text"
-          placeholder="90210"
-        />
+          placeholder="Type your message.."
+          rows="7"
+        ></textarea>
       </div>
     </div>
   </form>

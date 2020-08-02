@@ -12,7 +12,9 @@ import { SkillsComponent } from './components/skills/skills.component'
 import { PortfolioComponent } from './components/portfolio/portfolio.component'
 import { ContactMeComponent } from './components/contact-me/contact-me.component'
 import { FooterComponent } from './components/footer/footer.component'
-import { CarouselComponent } from './components/carousel/carousel.component'
+
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { CarouselComponent } from './components/carousel/carousel.component'
     PortfolioComponent,
     ContactMeComponent,
     FooterComponent,
+    CarouselComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,10 +1,18 @@
-<div class="container w-full bg-black text-white md:text-2xl font-hairline">
-  <app-welcome></app-welcome>
-  <app-nav></app-nav>
-  <app-home></app-home>
+<div
+  class="container p-2 md:p-4 h-screen bg-gray-200 text-white md:text-2xl font-hairline"
+>
+  <!-- <app-welcome></app-welcome> -->
+  <section class="p-4 bg-black h-full m-auto rounded-lg shadow-2xl">
+    <app-nav-bar></app-nav-bar>
+    <router-outlet></router-outlet>
+    <!-- <app-home></app-home>
   <app-about-me></app-about-me>
-  <app-skills></app-skills>
   <app-portfolio></app-portfolio>
-  <app-contact-me></app-contact-me>
-  <app-footer></app-footer>
+  <app-contact-me></app-contact-me> -->
+    <app-footer></app-footer>
+  </section>
 </div>
+
+<!-- <div class="container p-4 bg-white text-white md:text-2xl font-hairline">
+  <app-carousel></app-carousel>
+</div> -->

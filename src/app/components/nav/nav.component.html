@@ -1,31 +1,37 @@
-<nav>
-  <hr />
+<nav class="m-auto md:text-lg">
   <ul
-    class="md:w-2/3 mx-auto py-2 flex flex-row justify-center sm:justify-around uppercase"
+    class="md:w-2/3 m-auto pb-2 md:pb-4 flex flex-row justify-center text-center sm:justify-around uppercase"
   >
     <li>
-      <a *ngIf="!isMobile" class="brand-blue" href="#welcome">Welcome</a>
-      <a *ngIf="isMobile" class="px-5" href="#welcome"
+      <a *ngIf="!isMobile" class="brand-blue" routerLink="">Home</a>
+      <a *ngIf="isMobile" class="px-5" routerLink=""
         ><i aria-hidden="true" class="fas fa-home brand-blue" title="Home"></i
       ></a>
     </li>
     <li>
-      <a *ngIf="!isMobile" class="brand-blue" href="#about-me">About Me</a>
-      <a *ngIf="isMobile" class="px-5 brand-blue" href="#about-me"
+      <a *ngIf="!isMobile" class="brand-blue" routerLink="/about-me"
+        >About Me</a
+      >
+      <a *ngIf="isMobile" class="px-5 brand-blue" routerLink="/about-me"
         ><i aria-hidden="true" class="fas fa-id-card" title="About Me"></i
       ></a>
     </li>
     <li>
-      <a *ngIf="!isMobile" class="brand-blue" href="#portfolio">Portfolio</a>
-      <a *ngIf="isMobile" href="#portfolio" class="px-5"
+      <a *ngIf="!isMobile" class="brand-blue" routerLink="/portfolio"
+        >Portfolio</a
+      >
+      <a *ngIf="isMobile" routerLink="/portfolio" class="px-5"
         ><i aria-hidden="true" class="fas fa-archive" title="Portfolio"></i
       ></a>
     </li>
     <li>
-      <a *ngIf="!isMobile" class="brand-blue" href="#contact">Contact</a>
-      <a *ngIf="isMobile" href="#contact" class="px-5"
+      <a *ngIf="!isMobile" class="brand-blue" routerLink="/contact-me"
+        >Contact</a
+      >
+      <a *ngIf="isMobile" routerLink="/contact-me" class="px-5"
         ><i aria-hidden="true" class="fas fa-envelope" title="Contact"></i
       ></a>
     </li>
   </ul>
+  <hr />
 </nav>
