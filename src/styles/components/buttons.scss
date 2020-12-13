@@ -1,0 +1,53 @@
+/* purgecss start ignore */
+
+.isa-btn {
+  @apply border-solid;
+  @apply border;
+  @apply cursor-pointer;
+  @apply font-semibold;
+  @apply no-underline;
+  @apply px-12;
+  @apply py-4;
+  @apply rounded;
+  @apply shadow-none;
+  @apply text-sm;
+  @apply uppercase;
+  /*   transition-property: color background-color border-color;
+  transition-duration: var(--transition-duration-highlight);
+  transition-timing-function: var(--transition-easing); */
+
+  // in case it's applied to an anchor tag
+  &:hover {
+    @apply no-underline;
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed;
+    @apply pointer-events-none;
+  }
+
+  &-primary {
+    @apply bg-primary-default;
+    @apply border-primary-default;
+    @apply text-white;
+    &:hover {
+      @apply bg-primary-dark;
+      @apply border-primary-dark;
+    }
+    &:focus {
+      @apply bg-primary-default;
+      @apply border-primary-default;
+    }
+    &:active {
+      @apply bg-primary-default;
+      @apply border-primary-default;
+    }
+    &:disabled {
+      @apply bg-gray-300;
+      @apply text-white;
+      @apply border-gray-300;
+    }
+  }
+}
+
+/* purgecss end ignore */

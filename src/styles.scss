@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+// Global resets and prerequisites
+@import './styles/resets.scss';
+@import './styles/typography.scss';
+@import './styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+
+// Custom-made style (Tailwind) components
+/* purgecss start ignore */
+@import './styles/components/buttons.scss';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';

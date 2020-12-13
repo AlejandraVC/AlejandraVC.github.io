@@ -1,0 +1,11 @@
+/* purgecss start ignore */
+
+:root {
+  // TRANSITIONS
+  ///////////////////////////
+  --transition-duration-highlight: 100ms;
+  --transition-duration-reveal: 200ms;
+  --transition-easing: cubic-bezier(0, 0.5, 0, 1);
+}
+
+/* purgecss end ignore */
